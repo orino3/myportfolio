@@ -1,0 +1,16 @@
+
+    <svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100%" height="100%" fill="#2C74B3"/>
+      <text
+        x="50%"
+        y="50%"
+        dominant-baseline="middle"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-family="system-ui, sans-serif"
+        font-size="24"
+      >
+        AI Chat Interface
+      </text>
+    </svg>
+  
