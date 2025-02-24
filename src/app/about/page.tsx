@@ -26,7 +26,7 @@ export default function About() {
             {/* Profile Section */}
             <div className="glass-card overflow-hidden rounded-3xl relative animate-float h-[600px]">
               <Image
-                src="/images/profile.png"
+                src="/myportfolio/images/profile.png"
                 alt="Profile Photo"
                 fill
                 quality={100}
