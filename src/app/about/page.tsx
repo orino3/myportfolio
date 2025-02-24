@@ -14,8 +14,8 @@ const skillToProjects = {
 
 export default function About() {
   return (
-    <main className="min-h-screen pt-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen pt-24 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative min-h-screen pb-24">
         {/* Background Effects */}
         <AIBackground />
 

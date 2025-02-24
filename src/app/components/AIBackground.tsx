@@ -43,55 +43,57 @@ export default function AIBackground() {
 
   return (
     <>
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0B1C3D]/80 via-[#1D273B]/80 to-[#0B1C3D]/80" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(0,82,212,0.1),transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(0,255,255,0.1),transparent_60%)]" />
-      
-      <div className="absolute inset-0">
-        <div className="neural-grid" />
+      <div className="fixed inset-0 min-h-screen w-full -z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0B1C3D]/80 via-[#1D273B]/80 to-[#0B1C3D]/80" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(0,82,212,0.1),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(0,255,255,0.1),transparent_60%)]" />
         
-        <div className="floating-particles">
-          {particles.map((particle, index) => (
-            <div
-              key={index}
-              className="particle"
-              style={{
-                left: `${particle.x}%`,
-                top: `${particle.y}%`,
-                width: `${particle.size}px`,
-                height: `${particle.size}px`,
-                '--duration': `${particle.duration}s`,
-              } as React.CSSProperties}
-            />
-          ))}
-        </div>
+        <div className="absolute inset-0">
+          <div className="neural-grid" />
+          
+          <div className="floating-particles">
+            {particles.map((particle, index) => (
+              <div
+                key={index}
+                className="particle"
+                style={{
+                  left: `${particle.x}%`,
+                  top: `${particle.y}%`,
+                  width: `${particle.size}px`,
+                  height: `${particle.size}px`,
+                  '--duration': `${particle.duration}s`,
+                } as React.CSSProperties}
+              />
+            ))}
+          </div>
 
-        <div className="relative w-full h-full">
-          {dataStreams.map((stream, index) => (
-            <div
-              key={index}
-              className="data-stream"
-              style={{
-                top: `${stream.top}%`,
-                width: `${stream.width}%`,
-                animationDelay: `${stream.delay}s`,
-              }}
-            />
-          ))}
-        </div>
+          <div className="relative w-full h-full">
+            {dataStreams.map((stream, index) => (
+              <div
+                key={index}
+                className="data-stream"
+                style={{
+                  top: `${stream.top}%`,
+                  width: `${stream.width}%`,
+                  animationDelay: `${stream.delay}s`,
+                }}
+              />
+            ))}
+          </div>
 
-        <div className="relative w-full h-full">
-          {neuralPoints.map((point, index) => (
-            <div
-              key={index}
-              className="neural-connection"
-              style={{
-                left: `${point.x}%`,
-                top: `${point.y}%`,
-                animationDelay: `${point.delay}s`,
-              }}
-            />
-          ))}
+          <div className="relative w-full h-full">
+            {neuralPoints.map((point, index) => (
+              <div
+                key={index}
+                className="neural-connection"
+                style={{
+                  left: `${point.x}%`,
+                  top: `${point.y}%`,
+                  animationDelay: `${point.delay}s`,
+                }}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>
