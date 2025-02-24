@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import AIBackground from '../components/AIBackground';
 
@@ -25,12 +24,9 @@ export default function About() {
           <div className="space-y-8 stagger-animation">
             {/* Profile Section */}
             <div className="glass-card overflow-hidden rounded-3xl relative animate-float h-[600px]">
-              <Image
+              <img
                 src="/myportfolio/images/profile.png"
                 alt="Profile Photo"
-                fill
-                quality={100}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                 style={{ 
                   objectFit: 'cover', 
                   objectPosition: 'center center',
@@ -38,7 +34,6 @@ export default function About() {
                   height: '100%'
                 }}
                 className="hover:scale-105 transition-transform duration-500"
-                priority
               />
             </div>
 
