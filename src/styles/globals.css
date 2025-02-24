@@ -36,7 +36,8 @@
   }
 
   body {
-    background-color: var(--deep-space);
+    background-color: #0B1C3D;
+    color: #FFFFFF;
     min-height: 100vh;
     overflow-x: hidden;
   }

@@ -43,9 +43,9 @@ export default function AIBackground() {
 
   return (
     <>
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0B1C3D] via-[#1D273B] to-[#0B1C3D]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(0,82,212,0.15),transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(0,255,255,0.15),transparent_60%)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0B1C3D]/80 via-[#1D273B]/80 to-[#0B1C3D]/80" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(0,82,212,0.1),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(0,255,255,0.1),transparent_60%)]" />
       
       <div className="absolute inset-0">
         <div className="neural-grid" />
